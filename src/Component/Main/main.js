@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
@@ -8,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Main() {
     return (
-        <div>
+        <>
             <Container fluid className="mainContainer ">
                 <img className="hibiscusImg" src="assets/hibiscus 1.png" alt="hibiscus"></img>
                 <img className="palmImg" src="assets/palm 1.png" alt="palm"></img>
@@ -20,22 +19,21 @@ function Main() {
                             <div className="container rounded mt-3">
                                 <Link to='/detailtour'>
                                     <img src={path} alt="destination"></img>
+                                    <h3>
+                                        {datas.day}D/{datas.nigth}N {datas.destination}
+                                    </h3>
+                                    <div className="priceContainer d-flex justify-content-between">
+                                        <p>IDR. {datas.price}</p>
+                                        <small>{datas.country}</small>
+                                    </div>
                                 </Link>
-                                <h3>
-                                    {datas.day}D/{datas.nigth}N {datas.destination}
-                                </h3>
-                                <div className="priceContainer d-flex justify-content-between">
-                                    <p>IDR. {datas.price}</p>
-                                    <small>{datas.country}</small>
-                                </div>
                             </div>
-
                         );
                     })}
                 </div>
                 <Footer />
             </Container>
-        </div >
+        </ >
     );
 }
 

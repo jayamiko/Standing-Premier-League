@@ -2,10 +2,10 @@
     background: url("../../Image/TitleImage.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 547px;
-    top: -12px;
+    margin-top: -50px;
   }
   
   .container-lg {
@@ -18,7 +18,6 @@
   .container-lg h1 {
     font-weight: 600;
     font-size: 64px;
-  
     color: #fff;
   }
   

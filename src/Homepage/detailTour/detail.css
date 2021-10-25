@@ -1,7 +1,6 @@
 body{
-position: relative;
-width: 1440px;
-height: 1432px;
+/* position: relative; */
+/* height: 1432px; */
 background: #F1F1F1;
 }
 
@@ -14,21 +13,20 @@ top: 140px;
 }
 .mainContainer {
     background-color: #f1f1f1;
-    height: 1400px;
-    position: absolute;
+    /* height: 1800px; */
+    /* position: absolute; */
     top: 530px;
-    z-index: -999999;
+    /* z-index: -999999; */
 }
 
-.title{
-/* position: absolute; */
+.titledetail{
 font-family: Avenir;
 font-style: normal;
 font-weight: 900;
-font-size: 48px;
+font-size: 48px !important;
 line-height: 66px;
 display: flex;
-align-items: center;
+align-items: center !important;
 color: #000000;
 }
 

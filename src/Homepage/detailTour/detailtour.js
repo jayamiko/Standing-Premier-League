@@ -15,7 +15,7 @@ function Detailtour() {
             <img className="hibiscusImg" src="assets/hibiscus 1.png" alt="hibiscus"></img>
             <img className="palmImg" src="assets/palm 1.png" alt="palm"></img>
             <main className="main">
-                <h1 className="title">6D/4N Fun Tassie Vacation + Sydney</h1>
+                <h1 className="titledetail">6D/4N Fun Tassie Vacation + Sydney</h1>
                 <p className='subtitle'>Australia</p>
                 <div>
                     <img className="backgroundMain" src={Background} alt="Australia" />
@@ -146,4 +146,4 @@ function State(props) {
     );
 }
 
-export default { Detailtour, IDR };
+export default Detailtour;
