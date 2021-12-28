@@ -4,17 +4,14 @@ import { getStandings } from "../../actions/StandingsAction";
 
 function Standings() {
   const { getStandingsResult, getStandingsLoading, getStandingsError } =
-    useSelector((state) => state.TeamReducer);
+    useSelector((state) => state.ListReducer);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     // getList Klasemen
-    console.log("1. Use Effect Component Did Mount");
     dispatch(getStandings());
   }, [dispatch]);
-
-  console.log(getStandingsResult);
 
   return (
     <div>
@@ -23,7 +20,11 @@ function Standings() {
         getStandingsResult.map((standing) => {
           return (
             <ul key={standing.id}>
-              <li>{standing.name}</li>
+              <li>
+                {standing.name}
+                <br />
+                {standing.slug}
+              </li>
             </ul>
           );
         })

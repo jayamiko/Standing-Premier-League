@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import TeamReducer from "./Team";
+import ListReducer from "./List";
 
 export default combineReducers({
-  TeamReducer,
+  ListReducer,
 });
