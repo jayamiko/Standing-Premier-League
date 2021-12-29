@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import {useSelector}  from "react-redux";
 import { addList, getStandings } from "../../actions/StandingsAction";
 
 function AddList() {
-  const [name, setName] = useState("");
   const [slug, setSlug] = useState("");
-  const { addStandingsResult } = useSelector((state) => state.ListReducer);
-
+  const [name, setName] = useState("");
+  
+  const addStandingsResult = useSelector((state) => state.ListReducer);
   const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
