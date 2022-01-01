@@ -1,0 +1,16 @@
+.container-nav {
+  background-color: skyblue !important;
+  .nav-brand {
+    font-size: 3.2em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: snow !important;
+    padding-left: 6px;
+  }
+  .nav-link {
+    color: snow !important;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+}

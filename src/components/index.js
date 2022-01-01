@@ -1,4 +1,4 @@
-import Standings from "./Standings";
-import AddList from "./AddList";
+import Navbar from "./Navbar/Navbar";
+import Jumbotron from "./Jumbotron/Jumbotron";
 
-export { Standings, AddList };
+export {Navbar, Jumbotron};
