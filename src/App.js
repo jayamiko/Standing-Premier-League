@@ -1,40 +1,26 @@
 import {Navbar, Jumbotron} from "./components";
-import Table from "./components/Table/Table";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+// Import Pages
+import {AddPage, EditPage, DetailPage, HomePage} from "./Pages";
 
 function App() {
   const title = "PRIMIER LEAGUE";
-  const standing = [
-    {
-      id: "1",
-      club: "Chelsea Fc",
-      sg: "10",
-      point: "50",
-    },
-    {
-      id: "2",
-      club: "Manchester City",
-      sg: "10",
-      point: "59",
-    },
-    {
-      id: "3",
-      club: "Tottenham Hotspur",
-      sg: "10",
-      point: "45",
-    },
-    {
-      id: "4",
-      club: "Liverpool Fc",
-      sg: "10",
-      point: "52",
-    },
-  ];
-
   return (
     <div>
       <Navbar title={title} />
       <Jumbotron />
-      <Table data={standing} />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+
+          <Route exact path="/add" element={<AddPage />} />
+
+          <Route exact path="/detail/:id" element={<DetailPage />} />
+
+          <Route exact path="/edit/:id" element={<EditPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
